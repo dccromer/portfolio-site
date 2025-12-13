@@ -2,31 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Diamone Cromer | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diamone Cromer – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <h1>Diamone Cromer</h1>
-    <p>Data Analytics & Architecture Minor at Syracuse University</p>
+    <p class="subtitle">Data Analytics & Architecture Minor at Syracuse University</p>
+    <nav>
+      <ul>
+        <li><a href="architecture.html">Architecture Work</a></li>
+        <li><a href="data.html">Data Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="architecture.html">Architecture Work</a>
-    <a href="data.html">Data Projects</a>
-    <a href="resume.html">Resume</a>
-  </nav>
-
   <main>
-    <section>
-      <h2>Welcome!</h2>
-      <p>I’m a student blending design and data to explore the future of smart buildings, sustainability, and visual storytelling.</p>
-      <p>Use the links above to explore my work.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I’m a student blending design and data to explore the future of smart buildings, sustainability, and visual storytelling.</p>
+        <a class="button" href="#featured">View My Work</a>
+      </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="featured" class="featured">
+      <h3>Featured Work</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Architecture Work</h4>
+          <p>Models, renders, diagrams & overlays.</p>
+          <a href="architecture.html">Explore →</a>
+        </div>
+        <div class="card">
+          <h4>Data Projects</h4>
+          <p>Dashboards, smart building analytics, visualizations.</p>
+          <a href="data.html">Explore →</a>
+        </div>
+        <div class="card">
+          <h4>Resume</h4>
+          <p>View experience, roles, and academic highlights.</p>
+          <a href="resume.html">Explore →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <h3>About Me</h3>
+      <p>I’m currently a Syracuse University student merging technology and design to create spaces and systems that respond intelligently to the world around them. Through my research and coursework, I aim to shape sustainable environments that are beautiful, functional, and data-informed.</p>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Diamone Cromer | Syracuse University</p>
+    <div class="footer-links">
+      <a href="https://github.com/dccromer" target="_blank">GitHub</a> |
+      <a href="mailto:dccromer@syr.edu">Email</a>
+    </div>
   </footer>
 </body>
 </html>
