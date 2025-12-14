@@ -109,10 +109,15 @@ body {
 
 .arrow-bounce {
   font-size: 2rem;
-  margin-top: 48px;
+  margin-top: 40px;
   animation: bounce 2s infinite;
-  color: var(--accent);
+  color: #E1FF67; /* neon yellow for high contrast */
   text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.arrow-bounce:hover {
+  transform: scale(1.1);
 }
 
 /* ===============================
