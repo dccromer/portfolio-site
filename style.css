@@ -150,3 +150,49 @@ footer {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(8px); }
 }
+
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  background-color: #fff; /* use #000 for black style */
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.left-section {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.info p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.right-section {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.right-section a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.right-section a:hover {
+  opacity: 0.6;
+}
