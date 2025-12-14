@@ -196,3 +196,60 @@ footer {
 .right-section a:hover {
   opacity: 0.6;
 }
+
+
+/* Hero Header Styles */
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px 20px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+
+.info {
+  line-height: 1.4;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info .name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-nav a:hover {
+  text-decoration: underline;
+}
