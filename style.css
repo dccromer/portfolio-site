@@ -97,3 +97,56 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
+
+/* Landing Section */
+.landing-intro {
+  height: 100vh;
+  background-color: #0f0f0f; /* deep black */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing-intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0;
+  animation: fadeScale 1.5s forwards;
+}
+
+.landing-intro p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1s;
+}
+
+.arrow-bounce {
+  font-size: 2rem;
+  margin-top: 40px;
+  animation: bounce 2s infinite;
+  color: #E1FF67;
+}
+
+/* Animations */
+@keyframes fadeScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
