@@ -2,7 +2,7 @@
 :root {
   --bg: #FAF7F3;
   --text: #1a1a1a;
-  --accent: #B4C29B;
+  --accent: #B4C29B; /* soft olive green */
   --link-hover: #87986A;
   --font-main: 'Poppins', sans-serif;
 }
@@ -45,7 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px; /* adds vertical space between lines */
+  gap: 8px;
 }
 
 .info p {
@@ -59,7 +59,7 @@ body {
 /* RIGHT SIDE NAV */
 .right-section {
   display: flex;
-  gap: 32px; /* THIS spaces links horizontally */
+  gap: 32px;
   align-items: flex-start;
 }
 
@@ -107,13 +107,16 @@ body {
   animation-delay: 1s;
 }
 
+/* === ARROW BOUNCE === */
 .arrow-bounce {
+  display: inline-block;
   font-size: 2rem;
   margin-top: 40px;
   animation: bounce 2s infinite;
-  color: #E1FF67; /* neon yellow for high contrast */
+  color: #E1FF67; /* neon yellow */
   text-decoration: none;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .arrow-bounce:hover {
