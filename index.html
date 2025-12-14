@@ -5,13 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diamone Cromer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .landing-intro {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #f9f6f3; /* you can change this background */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .intro-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: fadeInScale 1s forwards;
+    }
+
+    .intro-text p {
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeIn 1s 0.5s forwards;
+    }
+
+    .arrow-bounce {
+      font-size: 2rem;
+      margin-top: 2rem;
+      animation: bounce 1.5s infinite;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+    }
+
+    @keyframes fadeInScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
+  <!-- LANDING INTRO -->
+  <section class="landing-intro">
+    <div class="intro-text">
+      <h1 class="fade-in scale">DATA × DESIGN</h1>
+      <p class="fade-in delay">by Diamone Cromer</p>
+    </div>
+    <a href="#main-content" class="arrow-bounce">&#8595;</a>
+  </section>
+
+  <!-- MAIN SITE CONTENT -->
+  <header id="main-content">
     <h1>Diamone Cromer</h1>
     <p>Data Analytics & Architecture Minor · Syracuse University</p>
 
@@ -23,20 +94,3 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
-  <!-- HERO SECTION -->
-  <section>
-    <h2>Where Data Meets Design</h2>
-    <p>
-      I explore how design, data, and technology intersect. My work focuses on smart buildings, sustainability, and visual storytelling—blending technical skill with creative insight.
-    </p>
-    <a class="button" href="data.html">View Projects</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Diamone Cromer · Built with HTML, CSS & GitHub Pages
-  </footer>
-
-</body>
-</html>
