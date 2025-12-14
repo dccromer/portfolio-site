@@ -44,13 +44,15 @@ body {
 .info {
   display: flex;
   flex-direction: column;
-  gap: 6px; /* THIS adds vertical spacing */
+  justify-content: center;
+  gap: 8px; /* adds vertical space between lines */
 }
 
 .info p {
   margin: 0;
-  line-height: 1.4;
-  letter-spacing: 0.6px;
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.8px;
   color: #333;
 }
 
