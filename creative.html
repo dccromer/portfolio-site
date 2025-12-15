@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Projects – Diamone Cromer</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .creative-section {
+      background-color: #FAF7F3;
+      padding: 80px 64px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .creative-heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #1a1a1a;
+    }
+
+    .creative-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 16px;
+      color: #1a1a1a;
+    }
+
+    .project-caption {
+      font-size: 0.9rem;
+      color: #444;
+      margin: 0 16px 16px;
+      line-height: 1.5;
+    }
+
+    .project-card a {
+      display: block;
+      margin: 0 16px 20px;
+      font-size: 0.85rem;
+      color: #87986A;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <header class="top-bar">
+    <div class="left-section">
+      <div class="logo">DC</div>
+      <div class="info">
+        <p>Diamone Cromer</p>
+        <p>Data + Architecture</p>
+        <p>Syracuse University</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <a href="index.html#projects">Projects</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="data.html">Data</a>
+      <a href="creative.html">Creative</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- CREATIVE PROJECTS -->
+  <section class="creative-section">
+    <h2 class="creative-heading">Creative Projects</h2>
+
+    <div class="creative-grid">
+
+      <!-- Project 1: ECLIPSE Magazine -->
+      <div class="project-card">
+        <img src="images/eclipse-cover.jpg" alt="ECLIPSE Magazine Cover" class="project-image" />
+        <h3 class="project-title">ECLIPSE: Fashion Glossary Magazine</h3>
+        <p class="project-caption">
+          A print and digital magazine exploring fashion language through design.<br>
+          <strong>Contributions:</strong> Layout design, glossary writing, visual storytelling.<br>
+          <strong>Tools:</strong> Adobe InDesign, Photoshop.
+        </p>
+        <a href="pdfs/DiamoneCromer_FashionGlossaryMagazine_Eclipse.pdf" target="_blank">View Full Magazine PDF</a>
+      </div>
+
+      <!-- Placeholder Project 2 -->
+      <div class="project-card">
+        <img src="images/poster-sample.jpg" alt="Poster Design Sample" class="project-image" />
+        <h3 class="project-title">Poster Design Study</h3>
+        <p class="project-caption">
+          Visual exploration of typography, layout, and color in promotional posters.  
+          <strong>Medium:</strong> Digital + print mockups.
+        </p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+      <!-- Placeholder Project 3 -->
+      <div class="project-card">
+        <img src="images/moodboard-preview.jpg" alt="Moodboard" class="project-image" />
+        <h3 class="project-title">Moodboard Exploration</h3>
+        <p class="project-caption">
+          Visual study for color, theme, and material inspiration across fashion and space design.
+        </p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
