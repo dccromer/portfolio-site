@@ -2,7 +2,7 @@
 :root {
   --bg: #FAF7F3;
   --text: #1a1a1a;
-  --accent: #B4C29B; /* soft olive green */
+  --accent: #B4C29B;
   --link-hover: #87986A;
   --font-main: 'Poppins', sans-serif;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 /* ===============================
-   TOP BAR / HEADER
+   HEADER / TOP BAR
 ================================ */
 .top-bar {
   display: flex;
@@ -49,10 +49,9 @@ body {
 
 .info p {
   margin: 0;
-  line-height: 1.5;
   font-size: 14px;
-  letter-spacing: 0.8px;
   color: #333;
+  letter-spacing: 0.8px;
 }
 
 .right-section {
@@ -74,7 +73,7 @@ body {
 }
 
 /* ===============================
-   LANDING INTRO
+   LANDING SECTION
 ================================ */
 .landing-intro {
   height: 100vh;
@@ -90,8 +89,8 @@ body {
 .landing-intro h1 {
   font-size: 3.2rem;
   font-weight: 700;
-  margin: 0;
   letter-spacing: 2px;
+  margin: 0;
   opacity: 0;
   animation: fadeScale 1.5s forwards;
 }
@@ -121,21 +120,29 @@ body {
 }
 
 /* ===============================
-   ANIMATIONS
+   SCROLLING BANNER
 ================================ */
-@keyframes fadeScale {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+.scroll-banner {
+  background-color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 40px 0;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.scroll-text {
+  display: inline-block;
+  font-size: 5vw;
+  font-weight: 700;
+  padding-left: 100%;
+  animation: marquee 4s linear infinite;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* ===============================
@@ -145,7 +152,6 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 80px 64px;
-  font-family: var(--font-main);
 }
 
 .works-heading {
@@ -156,7 +162,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Project Row Layout */
 .project-row {
   display: flex;
   justify-content: space-between;
@@ -170,18 +175,17 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-/* Left Side (Number + Title) */
 .project-left {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px;
   flex: 1;
 }
 
 .project-num {
   font-size: 0.95rem;
   color: #999;
-  min-width: 30px;
+  min-width: 40px;
   letter-spacing: 1px;
 }
 
@@ -198,7 +202,6 @@ body {
   text-decoration: underline;
 }
 
-/* Right Side (Categories + Year) */
 .project-right {
   text-align: right;
   font-size: 0.9rem;
@@ -216,14 +219,14 @@ body {
   font-size: 0.85rem;
   color: #666;
 }
+
 /* ===============================
-   ABOUT SECTION (Grid Layout)
+   ABOUT SECTION
 ================================ */
 .about-section {
   background-color: #0f0f0f;
   color: white;
   padding: 100px 64px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .about-grid {
@@ -269,35 +272,14 @@ body {
   color: #888;
   margin-bottom: 4px;
 }
-.scroll-banner {
-  background-color: #000;
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 40px 0;
-}
 
-.scroll-text {
-  display: inline-block;
-  font-size: 5vw;                /* MUCH bigger font size */
-  font-weight: 700;
-  padding-left: 100%;
-  animation: marquee 4s linear infinite;  /* Moves faster now */
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-@keyframes marquee {
-  0%   { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* CONTACT SECTION */
+/* ===============================
+   CONTACT SECTION
+================================ */
 .contact-section {
   background-color: #0f0f0f;
   color: white;
   padding: 80px 64px;
-  font-family: var(--font-main);
 }
 
 .contact-heading {
@@ -332,4 +314,22 @@ body {
   font-weight: 400;
   color: #ccc;
   text-align: right;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes fadeScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
 }
