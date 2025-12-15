@@ -29,7 +29,6 @@ body {
   text-transform: uppercase;
 }
 
-/* LEFT SIDE */
 .left-section {
   display: flex;
   gap: 24px;
@@ -56,7 +55,6 @@ body {
   color: #333;
 }
 
-/* RIGHT SIDE NAV */
 .right-section {
   display: flex;
   gap: 32px;
@@ -73,7 +71,6 @@ body {
 
 .right-section a:hover {
   opacity: 0.6;
-  color: var(--link-hover);
 }
 
 /* ===============================
@@ -108,13 +105,12 @@ body {
   animation-delay: 1s;
 }
 
-/* === ARROW BOUNCE === */
 .arrow-bounce {
   display: inline-block;
   font-size: 2rem;
   margin-top: 40px;
   animation: bounce 2s infinite;
-  color: #E1FF67; /* neon yellow */
+  color: #E1FF67;
   text-decoration: none;
   transition: transform 0.2s ease;
   cursor: pointer;
@@ -142,13 +138,12 @@ body {
   50% { transform: translateY(8px); }
 }
 
-/* ===============================
-   WORKS SECTION
-================================ */
+/* ===== WORKS SECTION (WHITE VERSION) ===== */
 .works-section {
   background-color: var(--bg);
   color: var(--text);
   padding: 80px 64px;
+  font-family: var(--font-main);
 }
 
 .works-heading {
@@ -163,24 +158,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid #aaa;
-  padding: 32px 0;
-  gap: 24px;
+  border-top: 1px solid #ddd;
+  padding: 40px 0;
+  gap: 16px;
+  font-family: var(--font-main);
 }
 
 .project-entry:last-child {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
 }
 
 .project-number {
   font-size: 14px;
   font-weight: 400;
-  min-width: 30px;
-  color: #444;
+  color: #999;
+  flex: 0 0 60px;
 }
 
 .project-details {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.project-details .left {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -189,8 +192,8 @@ body {
 .project-title {
   font-size: 1.8rem;
   font-weight: 600;
-  text-decoration: none;
   color: var(--text);
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -207,39 +210,5 @@ body {
 .project-year {
   font-size: 0.85rem;
   color: #666;
-  align-self: flex-end;
-}
-
-/* ===============================
-   RESPONSIVE
-================================ */
-@media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 24px 32px;
-  }
-
-  .right-section {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .works-section {
-    padding: 48px 24px;
-  }
-
-  .project-title {
-    font-size: 1.4rem;
-  }
-
-  .project-sub, .project-year {
-    font-size: 0.8rem;
-  }
-
-  .arrow-bounce {
-    font-size: 1.5rem;
-    margin-top: 24px;
-  }
+  text-align: right;
 }
