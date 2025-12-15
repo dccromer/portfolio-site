@@ -269,3 +269,24 @@ body {
   color: #888;
   margin-bottom: 4px;
 }
+.scroll-banner {
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.scroll-text {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
