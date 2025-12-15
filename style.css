@@ -384,3 +384,13 @@ body {
   font-size: 0.95rem;
   color: #555;
 }
+.logo-img {
+  height: 36px;
+  width: auto;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+.logo-img:hover {
+  opacity: 0.6;
+}
