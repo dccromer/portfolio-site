@@ -1,40 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Architecture Portfolio | Diamone Cromer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture Projects | Diamone Cromer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FAF7F3;
+      color: #1a1a1a;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-wrapper {
+      padding: 80px 64px;
+    }
+
+    .page-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 48px;
+    }
+
+    .project-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+
+    .project-description {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Architecture Portfolio</h1>
-    <p>Design. Space. Sustainability. Creativity in form and function.</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="data.html">Data Projects</a>
-    <a href="resume.html">Resume</a>
-  </nav>
+  <div class="page-wrapper">
+    <h1 class="page-title">Architecture</h1>
 
-  <main>
-    <section>
-      <h2>About My Architectural Work</h2>
-      <p>My architectural background includes hands-on seminars at the Center for Architecture, urban sustainability studies, and experimental design thinking. This page will showcase my design explorations and sketches.</p>
-    </section>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/living-tower.jpg" alt="Living Tower project">
+        <div class="project-info">
+          <h2 class="project-title">Living Tower</h2>
+          <p class="project-description">Exploring vertical density, layering, and urban housing through Rhino modeling and physical contour models.</p>
+        </div>
+      </div>
 
-    <section>
-      <h2>Project Gallery (Coming Soon)</h2>
-      <ul>
-        <li>Study after Takato Yamamoto — [Placeholder Image]</li>
-        <li>Tamedia Office Analysis — [Placeholder PDF]</li>
-        <li>Model-Making Workshop — [Photos Coming Soon]</li>
-      </ul>
-    </section>
-  </main>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/armor-study.jpg" alt="Armor Study">
+        <div class="project-info">
+          <h2 class="project-title">Armor Study</h2>
+          <p class="project-description">Conceptual project based on organic + defensive shell structures using foamcore + acrylic sheets.</p>
+        </div>
+      </div>
 
-  <footer>
-    <p>© 2025 Diamone Cromer</p>
-  </footer>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/coastal-path.jpg" alt="Coastal Path Cathedral">
+        <div class="project-info">
+          <h2 class="project-title">Coastal Path Cathedral</h2>
+          <p class="project-description">Atmospheric design project focused on site, light, and topography. Inspired by cathedral form & movement.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 (Optional) -->
+      <div class="project-card">
+        <img src="images/light-study.jpg" alt="Light + Structure Study">
+        <div class="project-info">
+          <h2 class="project-title">Light + Structure</h2>
+          <p class="project-description">Diagrammatic study of enclosure and material using wooden frame structures, light mapping, and transparency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
