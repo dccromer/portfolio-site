@@ -292,14 +292,12 @@ body {
   100% { transform: translateX(-100%); }
 }
 
-/* CONTACT SECTION (IMPROVED) */
+/* CONTACT SECTION */
 .contact-section {
   background-color: #0f0f0f;
   color: white;
   padding: 80px 64px;
   font-family: var(--font-main);
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .contact-heading {
@@ -315,23 +313,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid #ccc;
   padding: 32px 0;
+  border-top: 1px solid #ccc;
 }
 
 .contact-row:last-child {
   border-bottom: 1px solid #ccc;
 }
 
-.contact-label {
+.contact-left {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
 }
 
-.contact-detail {
+.contact-right {
   font-size: 1rem;
-  color: #ccc;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  color: #ccc;
+  text-align: right;
 }
