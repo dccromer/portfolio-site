@@ -73,6 +73,7 @@ body {
 
 .right-section a:hover {
   opacity: 0.6;
+  color: var(--link-hover);
 }
 
 /* ===============================
@@ -141,61 +142,6 @@ body {
   50% { transform: translateY(8px); }
 }
 
-/* ===== PROJECT LIST SECTION ===== */
-.project-list {
-  background-color: #0f0f0f;
-  color: white;
-  padding: 80px 64px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.project-list h2 {
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #ccc;
-  margin-bottom: 40px;
-}
-
-.project-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 24px 0;
-  border-top: 1px solid white;
-}
-
-.project-row:last-child {
-  border-bottom: 1px solid white;
-}
-
-.project-num {
-  font-size: 0.9rem;
-  flex: 0 0 40px;
-  color: #ccc;
-}
-
-.project-title a {
-  font-size: 2rem;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-}
-
-.project-title a:hover {
-  opacity: 0.7;
-}
-
-.project-meta {
-  text-align: right;
-  font-size: 0.75rem;
-  color: #ccc;
-  line-height: 1.4;
-  flex: 0 0 240px;
-}
-
-
-
 /* ===============================
    WORKS SECTION
 ================================ */
@@ -203,7 +149,6 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 80px 64px;
-  font-family: var(--font-main);
 }
 
 .works-heading {
@@ -216,9 +161,10 @@ body {
 
 .project-entry {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   border-top: 1px solid #aaa;
-  padding: 24px 0;
+  padding: 32px 0;
   gap: 24px;
 }
 
@@ -234,7 +180,7 @@ body {
 }
 
 .project-details {
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -261,4 +207,39 @@ body {
 .project-year {
   font-size: 0.85rem;
   color: #666;
+  align-self: flex-end;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px 32px;
+  }
+
+  .right-section {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .works-section {
+    padding: 48px 24px;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-sub, .project-year {
+    font-size: 0.8rem;
+  }
+
+  .arrow-bounce {
+    font-size: 1.5rem;
+    margin-top: 24px;
+  }
 }
