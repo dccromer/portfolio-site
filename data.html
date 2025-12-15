@@ -1,51 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Data Projects | Diamone Cromer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diamone Cromer</title>
+
+  <!-- External CSS + Google Fonts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Smooth scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Data Analytics Projects</h1>
-    <p>Turning numbers into narratives. Blending code, research, and impact.</p>
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="top-bar" id="main-content">
+    <div class="left-section">
+      <div class="logo">DC</div>
+      <div class="info">
+        <p>Diamone Cromer</p>
+        <p>Data + Architecture</p>
+        <p>Syracuse University</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <a href="#projects">Projects</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="data.html">Data</a>
+      <a href="creative.html">Creative</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="architecture.html">Architecture Work</a>
-    <a href="resume.html">Resume</a>
-  </nav>
+  <!-- LANDING INTRO SECTION -->
+  <section class="landing-intro">
+    <div class="intro-text">
+      <h1 class="fade-in scale">DATA × DESIGN</h1>
+      <p class="fade-in delay">by Diamone Cromer</p>
+    </div>
+    <a href="#projects" class="arrow-bounce">&#8595;</a>
+  </section>
 
-  <main>
-    <section>
-      <h2>SOURCE Research Fellowship (2025)</h2>
-      <p>Exploring predictive maintenance and sustainability in residential buildings.</p>
-      <ul>
-        <li>Analyzed environmental data (temperature, humidity, CO₂) using Python</li>
-        <li>Used machine learning to model energy usage patterns</li>
-        <li>Created visualizations to support building efficiency decisions</li>
-      </ul>
-    </section>
+  <!-- MOVING MARQUEE SECTION -->
+  <section class="scroll-banner">
+    <div class="scroll-text">
+      ART DIRECTION / BRAND DESIGN / UI DESIGN / STRATEGY /
+    </div>
+  </section>
 
-    <section>
-      <h2>Teaching Assistant - Game Design (2024)</h2>
-      <p>Guided students in learning JavaScript and Scratch to build games like Flappy Bird and Mario Kart.</p>
-      <ul>
-        <li>Taught coding fundamentals: motion, sound, game logic</li>
-        <li>One-on-one coaching and debugging</li>
-        <li>Boosted coding confidence in young learners</li>
-      </ul>
-    </section>
+  <!-- WORKS SECTION -->
+  <section id="projects" class="works-section">
+    <h2 class="works-heading">WORKS</h2>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <p>Python • JavaScript • Haskell • R</p>
-    </section>
-  </main>
+    <div class="project-row">
+      <div class="project-left">
+        <span class="project-num">01</span>
+        <a href="data.html" class="project-title">Smart Building Dashboard</a>
+      </div>
+      <div class="project-right">
+        <p class="project-sub">Data Analytics, UX/UI Design</p>
+        <p class="project-year">2024</p>
+      </div>
+    </div>
 
-  <footer>
-    <p>© 2025 Diamone Cromer</p>
-  </footer>
+    <div class="project-row">
+      <div class="project-left">
+        <span class="project-num">02</span>
+        <a href="source.html" class="project-title">SOURCE Research</a>
+      </div>
+      <div class="project-right">
+        <p class="project-sub">Predictive Maintenance, ML</p>
+        <p class="project-year">2024</p>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project-left">
+        <span class="project-num">03</span>
+        <a href="architecture.html" class="project-title">Living Tower Portfolio</a>
+      </div>
+      <div class="project-right">
+        <p class="project-sub">Architecture, Physical Modeling</p>
+        <p class="project-year">2023–2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="about-grid">
+
+      <!-- COLUMN 1: ABOUT -->
+      <div class="about-column">
+        <h3>ABOUT</h3>
+        <h1 class="about-name">Diamone<br>Cromer</h1>
+        <img src="images/diamone-photo.jpg" alt="Diamone Cromer" class="about-photo" />
+      </div>
+
+      <!-- COLUMN 2: BIO -->
+      <div class="about-column">
+        <h3>BIO</h3>
+        <p>I'm a multidisciplinary thinker blending data analytics and architecture. As a student at Syracuse University, I’ve explored how buildings breathe and how systems think.</p>
+        <p>I’m passionate about projects that bridge creative design with technical precision—from smart dashboards to spatial storytelling.</p>
+        <p>Curious, driven, and always designing with intention.</p>
+      </div>
+
+      <!-- COLUMN 3: CAREER -->
+      <div class="about-column">
+        <h3>CAREER</h3>
+        <p><em>2025–present</em><br>Research Assistant<br>at Syracuse SOURCE</p>
+        <p><em>2024–2025</em><br>Architecture Intern<br>at Local Studio</p>
+        <p><em>2023</em><br>Data Visualization Intern<br>at XYZ Firm</p>
+      </div>
+
+      <!-- COLUMN 4: STUDIES -->
+      <div class="about-column">
+        <h3>MY STUDIES</h3>
+        <p><em>2023–2026</em><br>Data Analytics & Architecture<br>Syracuse University</p>
+        <p><em>2020–2023</em><br>STEM Academy<br>New York, NY</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2 class="contact-heading">CONTACT</h2>
+
+    <div class="contact-row">
+      <div class="contact-left">Mail</div>
+      <div class="contact-right">yourname@email.com</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-left">Instagram</div>
+      <div class="contact-right">@yourhandle</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-left">LinkedIn</div>
+      <div class="contact-right">Your Name</div>
+    </div>
+  </section>
+
 </body>
 </html>
