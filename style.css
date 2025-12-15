@@ -216,3 +216,56 @@ body {
   font-size: 0.85rem;
   color: #666;
 }
+/* ===============================
+   ABOUT SECTION (Grid Layout)
+================================ */
+.about-section {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 100px 64px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+
+.about-column h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.about-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+  line-height: 1.2;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.about-column p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.about-column p em {
+  font-style: italic;
+  font-weight: 400;
+  display: block;
+  color: #888;
+  margin-bottom: 4px;
+}
