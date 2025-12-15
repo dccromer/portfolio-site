@@ -35,9 +35,20 @@ body {
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 64px;
+  width: auto;
+  transition: opacity 0.3s ease;
+  margin-right: 12px;
+}
+
+.logo-img:hover {
+  opacity: 0.75;
 }
 
 .info {
@@ -383,13 +394,4 @@ body {
 .project-card p {
   font-size: 0.95rem;
   color: #555;
-}
-.logo-img {
-  height: 50px;
-  width: auto;
-  transition: opacity 0.3s ease;
-}
-
-.logo-img:hover {
-  opacity: 0.75;
 }
