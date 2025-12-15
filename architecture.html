@@ -3,114 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Architecture Projects | Diamone Cromer</title>
+  <title>Architecture | Diamone Cromer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #FAF7F3;
-      color: #1a1a1a;
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .page-wrapper {
-      padding: 80px 64px;
-    }
-
-    .page-title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 40px;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 48px;
-    }
-
-    .project-card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .project-info {
-      padding: 20px;
-    }
-
-    .project-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin: 0 0 12px;
-    }
-
-    .project-description {
-      font-size: 0.95rem;
-      color: #444;
-      line-height: 1.5;
-    }
-  </style>
 </head>
+
 <body>
 
-  <div class="page-wrapper">
-    <h1 class="page-title">Architecture</h1>
-
-    <div class="project-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="images/living-tower.jpg" alt="Living Tower project">
-        <div class="project-info">
-          <h2 class="project-title">Living Tower</h2>
-          <p class="project-description">Exploring vertical density, layering, and urban housing through Rhino modeling and physical contour models.</p>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="images/armor-study.jpg" alt="Armor Study">
-        <div class="project-info">
-          <h2 class="project-title">Armor Study</h2>
-          <p class="project-description">Conceptual project based on organic + defensive shell structures using foamcore + acrylic sheets.</p>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="images/coastal-path.jpg" alt="Coastal Path Cathedral">
-        <div class="project-info">
-          <h2 class="project-title">Coastal Path Cathedral</h2>
-          <p class="project-description">Atmospheric design project focused on site, light, and topography. Inspired by cathedral form & movement.</p>
-        </div>
-      </div>
-
-      <!-- Project 4 (Optional) -->
-      <div class="project-card">
-        <img src="images/light-study.jpg" alt="Light + Structure Study">
-        <div class="project-info">
-          <h2 class="project-title">Light + Structure</h2>
-          <p class="project-description">Diagrammatic study of enclosure and material using wooden frame structures, light mapping, and transparency.</p>
-        </div>
+  <!-- TOP NAVIGATION BAR -->
+  <header class="top-bar">
+    <div class="left-section">
+      <div class="logo">DC</div>
+      <div class="info">
+        <p>Diamone Cromer</p>
+        <p>Data + Architecture</p>
+        <p>Syracuse University</p>
       </div>
     </div>
-  </div>
+    <div class="right-section">
+      <a href="architecture.html">Architecture</a>
+      <a href="data.html">Data</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ARCHITECTURE PROJECTS -->
+  <section class="project-section">
+    <h2 class="section-title">ARCHITECTURE</h2>
+    <div class="project-grid">
+
+      <!-- Living Tower -->
+      <div class="project-card">
+        <img src="images/living-tower.jpg" alt="Living Tower project">
+        <h3>Living Tower</h3>
+        <p>Exploring vertical density, layering, and urban housing through Rhino modeling and physical contour models.</p>
+      </div>
+
+      <!-- Armor Study -->
+      <div class="project-card">
+        <img src="images/armor.jpg" alt="Armor Study">
+        <h3>Armor Study</h3>
+        <p>Conceptual project based on organic + defensive shell structures using foamcore + acrylic sheets.</p>
+      </div>
+
+      <!-- Cathedral -->
+      <div class="project-card">
+        <img src="images/cathedral.jpg" alt="Coastal Path Cathedral">
+        <h3>Coastal Path Cathedral</h3>
+        <p>Atmospheric design project focused on site, light, and topography. Inspired by cathedral form & movement.</p>
+      </div>
+
+      <!-- Light + Structure -->
+      <div class="project-card">
+        <img src="images/light-structure.jpg" alt="Light + Structure Study">
+        <h3>Light + Structure</h3>
+        <p>Diagrammatic study of enclosure and material using wooden frame structures, light mapping, and transparency.</p>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
