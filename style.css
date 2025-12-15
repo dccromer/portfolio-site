@@ -271,20 +271,20 @@ body {
 }
 .scroll-banner {
   background-color: #000;
-  color: white;
   overflow: hidden;
   white-space: nowrap;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .scroll-text {
   display: inline-block;
-  font-size: 3.5rem;       /* BIGGER text */
-  font-weight: 700;        /* Bold */
+  font-size: 5vw;                /* MUCH bigger font size */
+  font-weight: 700;
   padding-left: 100%;
-  animation: marquee 8s linear infinite; /* FASTER scroll */
+  animation: marquee 4s linear infinite;  /* Moves faster now */
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 @keyframes marquee {
