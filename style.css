@@ -193,3 +193,72 @@ body {
   line-height: 1.4;
   flex: 0 0 240px;
 }
+
+
+
+/* ===============================
+   WORKS SECTION
+================================ */
+.works-section {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 80px 64px;
+  font-family: var(--font-main);
+}
+
+.works-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.project-entry {
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #aaa;
+  padding: 24px 0;
+  gap: 24px;
+}
+
+.project-entry:last-child {
+  border-bottom: 1px solid #aaa;
+}
+
+.project-number {
+  font-size: 14px;
+  font-weight: 400;
+  min-width: 30px;
+  color: #444;
+}
+
+.project-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.project-title:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.project-sub {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-year {
+  font-size: 0.85rem;
+  color: #666;
+}
