@@ -274,16 +274,17 @@ body {
   color: white;
   overflow: hidden;
   white-space: nowrap;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .scroll-text {
   display: inline-block;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 3.5rem;       /* BIGGER text */
+  font-weight: 700;        /* Bold */
   padding-left: 100%;
-  animation: marquee 15s linear infinite;
+  animation: marquee 8s linear infinite; /* FASTER scroll */
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @keyframes marquee {
